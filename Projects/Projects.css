@@ -1,0 +1,39 @@
+.forefront{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw;
+}
+
+.thumbnail{
+    width: 35vw;
+    object-fit: cover;
+}
+
+.info{
+    width: 45vw;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(80, 80, 112);
+}
+
+.info > h1{
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    .forefront{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thumbnail{
+        width: 70vw;
+        margin-bottom: 5vh;
+    }
+
+    .info{
+        width: 70vw;
+    }
+
+    
+}
