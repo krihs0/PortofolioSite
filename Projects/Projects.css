@@ -7,6 +7,7 @@
 .thumbnail{
     width: 35vw;
     object-fit: cover;
+    box-shadow: 0 0 20px black;
 }
 
 .info{
@@ -14,10 +15,18 @@
     padding: 1rem;
     border-radius: 10px;
     background-color: rgb(80, 80, 112);
+    box-shadow: 0 0 20px black;
 }
 
 .info > h1{
     color: white;
+    font-size: 250%;
+}
+
+@media screen and (max-width: 1000px) {
+    .info > h1{
+        font-size: 150%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -34,6 +43,4 @@
     .info{
         width: 70vw;
     }
-
-    
 }

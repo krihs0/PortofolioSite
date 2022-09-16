@@ -62,7 +62,7 @@ header{
     margin-inline-end: 0.5em;
 }
 
-@media  (max-width: 40em) {
+@media screen and (max-width: 40em) {
     .primary-navigation{
         position: fixed;
         z-index: 1000;
@@ -130,7 +130,19 @@ header{
     color: white;
 }
 
-.portals{
-    height: 100vh;
-    background: rgb(37, 36, 44);
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 10rem;
+    background-color: rgb(37, 36, 44);
+    -moz-box-shadow: inset -5px 5px 5px rgb(47, 47, 49);
+    -webkit-box-shadow: inset -5px 5px 5px rgb(47, 47, 49);
+    box-shadow: inset -5px 5px 5px rgb(47, 47, 49);
+}
+
+footer > p > a{
+    text-decoration: none;
+    color:  white;
 }
